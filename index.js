@@ -3,12 +3,20 @@ const app = express();
 
 const port = 3000;
 
+app.set('view engine', 'pug')
+app.set('views', './views') // Started with file views
+
 app.get('/', (req, res) => {
-    res.send("<h1>Hello CodersX</h1>")
+    res.render('index');
 })
 
 app.get('/user', (req, res) => {
-    res.send("User List")
+    res.render('users/user', {
+        users: [
+            { id: 1, name: 'thanh' },
+            { id: 2, name: 'Linh' }
+        ]
+    })
 })
 
 app.listen(port, () => {
