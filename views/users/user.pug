@@ -1,10 +1,13 @@
-h1 User List
-a(href="/users/create") New
-form(action="/users/search" method="GET")
-    input(type="text" name="name")
-    button Search
-each user in users
-    li
-        span=user.name
-        span &nbsp
-        a(href="/users/"+user.id) view
+extends ../layouts/common.pug
+
+block content
+    h1 User List
+    a(href="/users/create") New
+    form(action="/users/search" method="GET")
+        input(type="text" name="name")
+        button Search
+    each user in users
+        li
+            span=user.name
+            span &nbsp
+            a(href="/users/"+user.id) view
