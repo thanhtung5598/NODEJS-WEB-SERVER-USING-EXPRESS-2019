@@ -1,20 +1,14 @@
 {
   "users": [
     {
-      "name": "Hồng",
-      "id": "-QeVFZGA"
-    },
-    {
-      "name": "Linh",
-      "id": "wyVZ1ldp"
+      "name": "th",
+      "phone": "0336365110",
+      "id": "-pa1ZnMr"
     },
     {
       "name": "Le Thanh Tung",
-      "id": "Ahul1402"
-    },
-    {
-      "name": "Hạnh",
-      "id": "sVGiyDO9"
+      "phone": "0336365110",
+      "id": "HBIILccs"
     }
   ]
 }
