@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require("express");
 const cookieParser = require('cookie-parser')
 
@@ -15,7 +17,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 app.set('view engine', 'pug')
 app.set('views', './views') // Started with file views
-app.use(cookieParser('qwoidjqw1212'));
+app.use(cookieParser(process.env.SESSION_SECRET));
 
 app.get('/',(req, res) => {
     res.render('index');
