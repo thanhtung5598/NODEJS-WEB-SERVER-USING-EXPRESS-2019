@@ -1,44 +1,16 @@
 {
   "users": [
     {
-      "name": "th",
+      "name": "thanh",
       "phone": "0336365110",
       "id": "-pa1ZnMr"
     },
     {
       "name": "Le Thanh Tung",
       "phone": "0336365110",
-      "id": "HBIILccs"
-    },
-    {
-      "name": "Le Thanh Tung",
-      "phone": "0336365110",
-      "id": "XNrKCeZ-"
-    },
-    {
-      "name": "Le",
-      "phone": "0336365110",
-      "id": "uMhnTjxB"
-    },
-    {
-      "name": "thanh",
-      "phone": "0336365110",
-      "id": "G_YR-OMP"
-    },
-    {
-      "name": "AAA",
-      "phone": "0336365110",
-      "id": "8q5To_0q"
-    },
-    {
-      "name": "Le Thanh Tung",
-      "phone": "0336365110",
-      "id": "rMyd6KUc"
-    },
-    {
-      "name": "Le Thanh Tung",
-      "phone": "0336365110",
-      "id": "XKTMGQHF"
+      "id": "HBIILccs",
+      "email": "thanh@gmail.com",
+      "password": "123123"
     }
   ]
 }
