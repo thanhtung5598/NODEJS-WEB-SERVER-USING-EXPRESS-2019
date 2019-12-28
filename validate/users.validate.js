@@ -14,5 +14,6 @@ module.exports.postCreate = (req,res,next)=>{
         });
         return;
     }
+    res.locals.status = true;
     next();
 }

@@ -31,6 +31,7 @@ module.exports.get = (req, res) => {
 }
 
 module.exports.postCreate = (req, res) => {
+    console.log(req.cookies);
     req.body.id = shortid.generate();
     db.get('users').push(req.body).write();
     res.redirect('/users');
