@@ -6,9 +6,10 @@ const cookieParser = require('cookie-parser')
 const app = express();
 const port = 3000;
 
-const userRoutes = require('./routes/users.route')
-const authenticate = require('./routes/auth.route')
+const userRoutes = require('./routes/users.route');
+const productRoute = require('./routes/product.route');
 
+const authenticate = require('./routes/auth.route');
 const authMiddleware = require('./middleware/auth.middleware');
 
 app.use(express.json()) // for parsing application/json
@@ -25,6 +26,7 @@ app.get('/',(req, res) => {
 
 app.use('/users',authMiddleware.requireAuth,userRoutes);
 app.use('/auth',authenticate);
+app.use('/products',productRoute);
 
 app.use(express.static('public'));
 
