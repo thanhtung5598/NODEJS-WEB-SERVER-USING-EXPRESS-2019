@@ -17,7 +17,6 @@ module.exports.postCreate = (req,res,next)=>{
         });
         return;
     }
-    res.locals.status = true;
     next();
 }
 module.exports.authValidate = (req,res,next)=>{
@@ -43,6 +42,8 @@ module.exports.authValidate = (req,res,next)=>{
         });
         return;
     }
-    res.cookie('userID',user.id);
+    res.cookie('userID',user.id,{
+        signed:true
+    });
     next();
 }

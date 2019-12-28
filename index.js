@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 app.set('view engine', 'pug')
 app.set('views', './views') // Started with file views
-app.use(cookieParser());
+app.use(cookieParser('qwoidjqw1212'));
 
 app.get('/',(req, res) => {
     res.render('index');
