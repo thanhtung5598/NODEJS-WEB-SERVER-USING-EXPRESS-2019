@@ -1,0 +1,11 @@
+extends ../layouts/common
+
+block content
+    h1 Transform
+    form(action="/transform/create",method="POST",style="width:25rem")
+            input(type="hidden",name="_csrf",value=csrfToken)
+            .form-group
+                input(type="text",name="accountID",class="form-control mr-2",placeholder="accountID")
+            .form-group
+                input(type="amount",name="amount",class="form-control mr-2",placeholder="amount")
+            button(type="submit" class="btn btn-primary") Transform
