@@ -1,31 +1,12 @@
 {
   "users": [
     {
-      "name": "thanh",
-      "phone": "0336365110",
-      "id": "-pa1ZnMr"
-    },
-    {
-      "name": "Tung",
-      "phone": "0336365110",
-      "id": "HBIILccs",
       "email": "thanh@gmail.com",
-      "password": "202cb962ac59075b964b07152d234b70"
-    },
-    {
-      "name": "Trinh",
-      "phone": "123123",
-      "id": "NhbBvtjW"
-    },
-    {
-      "name": "Linh",
-      "phone": "123",
-      "id": "5VTFHq7B"
-    },
-    {
-      "name": "thanh Thanh",
-      "phone": "111",
-      "id": "myUFpUgQ"
+      "password": "202cb962ac59075b964b07152d234b70",
+      "name": "Le Thanh Tung",
+      "phone": "0336365110",
+      "id": "aRfCU6bP",
+      "avatar": "uploads/a8e0c6d65eadb1e2c85dc24f93fbe6f2"
     }
   ],
   "products": [

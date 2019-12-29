@@ -6,11 +6,18 @@ block content
         each error in errors
             .alert.alert-danger=error
 
-    form(action="/users/create",method="POST",style="width:25rem")
+    form(action="/users/create",method="POST",style="width:25rem",enctype="multipart/form-data")
         .form-group
-            input(type="text" name="name" class="form-control mr-2",placeholder="name",value=values ? values.name : '')
+            input(type="email",name="email",class="form-control mr-2",placeholder="email",value=values ? values.email : '')
         .form-group
-            input(type="text" name="phone" class="form-control mr-2",placeholder="phone",value=values ? values.phone : '')
+            input(type="password",name="password",class="form-control mr-2",placeholder="password",value=values ? values.password : '')
+        .form-group
+            input(type="text",name="name",class="form-control mr-2",placeholder="name",value=values ? values.name : '')
+        .form-group
+            input(type="text",name="phone",class="form-control mr-2",placeholder="phone",value=values ? values.phone : '')
+        .custom-file.mb-2
+            input(type="file" name="avatar" , id="customFile",class="custom-file-input mr-2",placeholder="avatar",value=values ? values.avatar : '')
+            label(class="custom-file-label",for="customFile") Choose file...
         button(type="submit" class="btn btn-primary") submit
 
     
