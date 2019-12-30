@@ -6,7 +6,7 @@ const csurf = require('csurf')
 const mongoose = require('mongoose');
 
 //Connected mongoose
-mongoose.connect(process.env.MONGOOSE_CONNECT, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGOOSE_CONNECT, { useNewUrlParser: true , useUnifiedTopology: true});
 const csrfProtection = csurf({ cookie: true })
 
 const app = express();
@@ -43,7 +43,6 @@ app.use('/auth', authenticate);
 app.use('/products', authMiddleware.requireAuth, productRoute);
 app.use('/card',authMiddleware.requireAuth,cardRoute);
 app.use('/api/products',apiProductRoute);
-
 
 app.use(express.static('public'));
 app.use('/users',express.static('public')); // To create a virtual path prefix
