@@ -10,7 +10,7 @@ mongoose.connect(process.env.MONGOOSE_CONNECT, { useNewUrlParser: true , useUnif
 const csrfProtection = csurf({ cookie: true })
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const userRoutes = require('./routes/users.route');
 const productRoute = require('./routes/product.route');
