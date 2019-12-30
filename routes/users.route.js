@@ -13,7 +13,9 @@ router.get('/cookie',(req,res)=>{
     res.send('Hello world');
 })
 
-router.get('/search', userController.searchUserName);
+router.get('/search', 
+    userController.searchUserName
+);
 
 router.get('/create', userController.create);
 
