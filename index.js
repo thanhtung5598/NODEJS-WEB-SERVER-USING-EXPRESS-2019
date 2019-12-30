@@ -16,6 +16,7 @@ const userRoutes = require('./routes/users.route');
 const productRoute = require('./routes/product.route');
 const cardRoute = require('./routes/card.router');
 const transformRoute = require('./routes/transform.route')
+const apiProductRoute = require('./api/routes/product.route')
 
 const authenticate = require('./routes/auth.route');
 const authMiddleware = require('./middleware/auth.middleware');
@@ -41,6 +42,8 @@ app.use('/users', authMiddleware.requireAuth, userRoutes);
 app.use('/auth', authenticate);
 app.use('/products', authMiddleware.requireAuth, productRoute);
 app.use('/card',authMiddleware.requireAuth,cardRoute);
+app.use('/api/products',apiProductRoute);
+
 
 app.use(express.static('public'));
 app.use('/users',express.static('public')); // To create a virtual path prefix
